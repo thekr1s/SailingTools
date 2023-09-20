@@ -113,11 +113,10 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
     function onUpdate(dc) {
         var string;
 
-		var foreColor = Gfx.COLOR_WHITE;
-        
-    		// Forerunner 235 width: 215, height: 180
-    		//  center: 107, 90
-    		// time at top
+	
+		// Forerunner 235 width: 215, height: 180
+		//  center: 107, 90
+		// time at top
 		var today = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
 		string = today.hour.format("%2d") + ":" + today.min.format("%02d") + ":" + today.sec.format("%02d");
 		View.findDrawableById("targetTime").setText( string );
@@ -130,12 +129,7 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
         // only display position data if it we have it 
         if( posnInfo != null ) {
 			View.findDrawableById("targetBadPos").setText( "" );
-			
-			// if last position update was > 10 seconds old or signal is poor, draw data in dark grey 
-			if (Time.now().subtract( lastPosnUpdate ).value() >= 10 || posnInfo.accuracy < Position.QUALITY_USABLE) {
-				foreColor = Gfx.COLOR_DK_GRAY;
-			}
-			
+						
 			// get distance and bearing to target
             var distance = GeoCalcs.getDistance(posnInfo.position, tgt);
             var bearing_deg = GeoCalcs.getBearing_deg(posnInfo.position, tgt);
@@ -214,7 +208,7 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
 				
 				setTextColor( Gfx.COLOR_LT_GRAY);
 			} else {				
-				setTextColor( Gfx.COLOR_WHITE );
+				setTextColor( Gfx.COLOR_BLACK );
 			}
 			
             
