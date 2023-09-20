@@ -37,20 +37,20 @@
 	<string id="title_cmte_boat">Committee Boat</string>
 </strings>
 <menu id="MainMenu">
-	<menu-item id="load_waypoint">@Strings.menu_load_waypoint</menu-item>
-	<menu-item id="start_timer_5">@Strings.menu_start_timer_5</menu-item>
-	<menu-item id="start_timer_custom">@Strings.menu_start_timer_custom</menu-item>
-	<menu-item id="back">@Strings.menu_back</menu-item>
+	<menu-item id="load_waypoint" label="@Strings.menu_load_waypoint"/>
+	<menu-item id="start_timer_5" label="@Strings.menu_start_timer_5"/>
+	<menu-item id="start_timer_custom" label="@Strings.menu_start_timer_custom"/>
+	<menu-item id="back" label="@Strings.menu_back"/>
 </menu>
 <menu id="StopMenu">
-	<menu-item id="back">@Strings.menu_back</menu-item>
-	<menu-item id="save">@Strings.menu_save</menu-item>
-	<menu-item id="discard">@Strings.menu_discard</menu-item>
+	<menu-item id="back" label="@Strings.menu_back"/>
+	<menu-item id="save" label="@Strings.menu_save"/>
+	<menu-item id="discard" label="@Strings.menu_discard"/>
 </menu>
 <menu id="TargetMenu">
-	<menu-item id="back">@Strings.menu_back</menu-item>
-	<menu-item id="unfollow">@Strings.menu_unfollow</menu-item>
-	<menu-item id="save">@Strings.menu_saveTarget</menu-item>
+	<menu-item id="back" label="@Strings.menu_back"/>
+	<menu-item id="unfollow" label="@Strings.menu_unfollow"/>
+	<menu-item id="save" label="@Strings.menu_saveTarget"/>
 </menu>
 <properties>
 	<property id="customTimer" type="number">3</property>
