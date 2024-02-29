@@ -83,7 +83,7 @@ class SailingToolsMainView extends SailingToolsViewTemplate {
         
         // only display position data if it we have it 
         if( posnInfo != null ) {
-			View.findDrawableById("mainBadPos").setText( "" );
+			View.findDrawableById("mainBadPos").setColor( Gfx.COLOR_GREEN );
 			        
 			// Heading (Course Over Ground) on left
 			var heading_deg = posnInfo.heading * (180 / Math.PI);
@@ -125,13 +125,13 @@ class SailingToolsMainView extends SailingToolsViewTemplate {
 				string = "Position stale\nLast update:\n";
 				string += posnTime.hour.format("%2d") + ":" + posnTime.min.format("%02d") + ":" + posnTime.sec.format("%02d");
 				
-				View.findDrawableById("mainBadPos").setText( string );
+				View.findDrawableById("mainBadPos").setColor( Gfx.COLOR_ORANGE );
 				 
 				setTextColor( Gfx.COLOR_DK_GRAY );
 				 
 			} else if (posnInfo.accuracy < Position.QUALITY_USABLE) { 
 //				dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_DK_GRAY );
-				View.findDrawableById("mainBadPos").setText( "Position accuracy\nis poor" );
+				View.findDrawableById("mainBadPos").setColor( Gfx.COLOR_RED );
 				 
 				setTextColor( Gfx.COLOR_LT_GRAY );
 			} else {
@@ -150,7 +150,7 @@ class SailingToolsMainView extends SailingToolsViewTemplate {
             
         }
         else {
-			View.findDrawableById("mainBadPos").setText( "No position info" );
+			View.findDrawableById("mainBadPos").setColor( Gfx.COLOR_RED );
 				 
 			setTextColor( Gfx.COLOR_DK_GRAY );
 			

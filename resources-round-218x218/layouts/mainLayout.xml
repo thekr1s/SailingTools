@@ -4,15 +4,15 @@
   <label id="lblMainETE" text="COG" x="69" y="123" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_RIGHT" color="Gfx.COLOR_BLACK" />
   <label id="lblMainKnt" text="knt" x="83" y="123" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_LEFT" color="Gfx.COLOR_BLACK" />
 
-  <label id="mainTime" text="N/A" x="center" y="10" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" />
-  <label id="mainCOG" text="N/A" x="72" y="45" font="Gfx.FONT_NUMBER_HOT" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
-  <label id="mainKnt" text="N/A" x="80" y="31" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
-  <label id="mainLat" text="N/A" x="152" y="145" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
-  <label id="mainLatNS" text="" x="157" y="145" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
-  <label id="mainLon" text="N/A" x="152" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
-  <label id="mainLonEW" text="" x="157" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainTime" text="0 0" x="center" y="10" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLACK" />
+  <label id="mainCOG" text="0 0" x="72" y="45" font="Gfx.FONT_NUMBER_HOT" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainKnt" text="0 0" x="80" y="31" font="Gfx.FONT_NUMBER_THAI_HOT" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainLat" text="0 0" x="152" y="145" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainLatNS" text="NS" x="157" y="145" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainLon" text="0 0" x="152" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
+  <label id="mainLonEW" text="EW" x="157" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
 
-  <label id="mainBadPos" text="" x="center" y="41" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" />
-
+  <!-- <label id="mainBadPos" text="GPS" x="center" y="195" font="Gfx.FONT_TINY" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" /> -->
+  <!-- <shape type="circle" id="mainBadPos x="center" y="center" radius="108" border_width="2" color="Gfx.COLOR_RED" /> -->
 
 </layout>

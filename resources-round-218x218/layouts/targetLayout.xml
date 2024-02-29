@@ -13,7 +13,7 @@
   <label id="targetKnt" text="" x="110" y="28" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_WHITE" />
   <label id="targetNM" text="" x="110" y="88" font="Gfx.FONT_NUMBER_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_WHITE" />
 
-  <label id="targetBadPos" text="" x="center" y="41" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" />
+  <label id="targetBadPos" text="GPS" x="center" y="195" font="Gfx.FONT_TINY" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" />
 
 
 </layout>

@@ -128,8 +128,6 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
 	        
         // only display position data if it we have it 
         if( posnInfo != null ) {
-			View.findDrawableById("targetBadPos").setText( "" );
-						
 			// get distance and bearing to target
             var distance = GeoCalcs.getDistance(posnInfo.position, tgt);
             var bearing_deg = GeoCalcs.getBearing_deg(posnInfo.position, tgt);
@@ -198,19 +196,20 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
 				string = "Position stale\nLast update:\n";
 				string += posnTime.hour.format("%2d") + ":" + posnTime.min.format("%02d") + ":" + posnTime.sec.format("%02d");
 				
-				View.findDrawableById("targetBadPos").setText( string );
+				View.findDrawableById("targetBadPos").setColor(Gfx.COLOR_ORANGE);
 				
 				setTextColor( Gfx.COLOR_DK_GRAY);				 
 				 
 			} else if (posnInfo.accuracy < Position.QUALITY_USABLE) { 
 //				dc.setColor( Gfx.COLOR_RED, Gfx.COLOR_DK_GRAY );
-				View.findDrawableById("targetBadPos").setText( "Position accuracy\nis poor" );	
+				View.findDrawableById("targetBadPos").setColor(Gfx.COLOR_RED);
 				
 				setTextColor( Gfx.COLOR_LT_GRAY);
-			} else {				
+			} else {
 				setTextColor( Gfx.COLOR_BLACK );
+				View.findDrawableById("targetBadPos").setColor(Gfx.COLOR_GREEN);
 			}
-			
+
             
 	        // Call the parent onUpdate function to redraw the layout
 	        // We do this _after_ we've updated the layout elements
@@ -223,7 +222,7 @@ class SailingToolsTargetView extends SailingToolsViewTemplate {
 	        
         }
         else {
-			View.findDrawableById("targetBadPos").setText( "No position info" );
+			View.findDrawableById("targetBadPos").setColor(Gfx.COLOR_RED);
 			setTextColor( Gfx.COLOR_DK_GRAY );
 			
 	        // Call the parent onUpdate function to redraw the layout
