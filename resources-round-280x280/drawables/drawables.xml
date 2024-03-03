@@ -3,17 +3,19 @@
     
 
 	<drawable-list id="TargetLayoutDrawables">
+        <shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Gfx.COLOR_WHITE"/>
 		<!-- line between RelBrg/Brg and knt/distance -->
-		<shape type="rectangle" x="140" y="52" width="1" height="151" color="Gfx.COLOR_WHITE"/>
+		<shape type="rectangle" x="140" y="52" width="1" height="151" color="Gfx.COLOR_BLACK"/>
 		<!-- line above name -->
-		<shape type="rectangle" x="0" y="203" width="251" height="1" color="Gfx.COLOR_WHITE"/>
+		<shape type="rectangle" x="0" y="203" width="251" height="1" color="Gfx.COLOR_BLACK"/>
 	</drawable-list>
 	
 	<drawable-list id="MainLayoutDrawables">
+ 		<shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Gfx.COLOR_WHITE"/>
 		<!-- line between COG and knt -->
-		<shape type="rectangle" x="136" y="52" width="1" height="126" color="Gfx.COLOR_WHITE"/>
+		<shape type="rectangle" x="136" y="52" width="1" height="126" color="Gfx.COLOR_BLACK"/>
 		<!-- line above lat/long -->
-		<shape type="rectangle" x="0" y="181" width="251" height="1" color="Gfx.COLOR_WHITE"/>
+		<shape type="rectangle" x="0" y="181" width="251" height="1" color="Gfx.COLOR_BLACK"/>
 	</drawable-list>
 
 </drawables>

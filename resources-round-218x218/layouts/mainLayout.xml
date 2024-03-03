@@ -12,7 +12,7 @@
   <label id="mainLon" text="0 0" x="152" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_RIGHT"  color="Gfx.COLOR_BLACK" />
   <label id="mainLonEW" text="EW" x="157" y="163" font="Gfx.FONT_MEDIUM" justification="Gfx.TEXT_JUSTIFY_LEFT"  color="Gfx.COLOR_BLACK" />
 
-  <!-- <label id="mainBadPos" text="GPS" x="center" y="195" font="Gfx.FONT_TINY" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" /> -->
+  <label id="mainBadPos" text="GPS" x="center" y="195" font="Gfx.FONT_TINY" justification="Gfx.TEXT_JUSTIFY_CENTER"  color="Gfx.COLOR_RED" />
   <!-- <shape type="circle" id="mainBadPos x="center" y="center" radius="108" border_width="2" color="Gfx.COLOR_RED" /> -->
 
 </layout>

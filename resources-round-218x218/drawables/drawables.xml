@@ -3,7 +3,7 @@
     
 
 	<drawable-list id="TargetLayoutDrawables">
- 		<shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Gfx.COLOR_WHITE"/>
+        <shape type="rectangle" x="0" y="0" width="fill" height="fill" color="Gfx.COLOR_WHITE"/>
 		<!-- line between ETE and distance -->
 		<shape type="rectangle" x="107" y="45" width="1" height="115" color="Gfx.COLOR_BLACK"/>
 		<!-- line above lat/long -->
